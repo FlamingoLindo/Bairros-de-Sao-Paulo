@@ -1,35 +1,3 @@
-# Municípios e Bairros de São Paulo
-
-Este repositório contém scripts para coletar dados dos municípios do estado de São Paulo a partir da Wikipedia e buscar os bairros de cada município utilizando o Google Maps.
-
-## Estrutura do Repositório
-
-- **`bairros_to_json.py`**: Script para manipular e salvar os dados de bairros em formato JSON.
-
-- **`get_municipios.py`**: Script para coletar a lista de municípios de São Paulo a partir da Wikipedia.
-
-- **`municipios.txt`**: Arquivo contendo a lista de municípios coletados.
-
-- **`results.json`**: Arquivo gerado com os bairros encontrados para cada município.
-
-## Pré-requisitos
-
-- Python 3.7+
-
-- Google Chrome e ChromeDriver
-
-- Bibliotecas Python:
-  - `requests`
-  - `beautifulsoup4`
-  - `selenium`
-
-## ATENÇÃO
-
-Alguns municípios podem apresentar bairros incorretos, pois o Google Maps, em algumas situações, retorna locais cadastrados por usuários ou até informações de cidades com nomes semelhantes. Além disso, há casos em que determinados municípios não possuem bairros definidos no Google Maps; nesses casos, o nome do próprio município é utilizado como bairro.
-
----
-
-```json
 {
     "Adamantina": [
         "Jardim Adamantina",
@@ -10076,4 +10044,3 @@ Alguns municípios podem apresentar bairros incorretos, pois o Google Maps, em a
         "Zacarias"
     ]
 }
-```
